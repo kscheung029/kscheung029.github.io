@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Places</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="styles/styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="wrapper1">
+        <header>
+            <div class="wrapper">
+                <h1 class="japan"> <a href="index.html">JAPAN</a></h1>
+                <button class="btn-menu">Menu</button>
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Main</a></li>
+                        <li><a href="Gallery.html">Gallery</a></li>
+                        <li><a href="Culture.html">Culture</a></li>
+                        <li><a href="Symbols.html">Symbols</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <section>
+            <br>
+            <h1>Gallery of Japan</h1>
+            <br><br>
+            <p>Japan is a country that has it all and more… sacred Shinto shrines, magnificent Buddhist temples, bygone
+                trade footpaths, spectacular landscaped gardens, eclectic themed pet cafes, diverse art styles,
+                preserved cultural icons, and gastronomical delights. You could spend a lifetime exploring this country
+                and barely scratch its extraordinary expanse.
+                <br><br>
+                Take a look at the photos below and you will be stunned by how beautiful this country is!
+
+            </p>
+            <div class="content">
+                <div class="hero-slider">
+                    <div class="hero-slideshow cycle-slideshow" data-cycle-fx="scrollHorz" data-cycle-timeout="0"
+                        data-cycle-prev="#prev" data-cycle-next="#next" data-cycle-pager="#adv-custom-pager"
+                        data-cycle-pager-template="<a href='#'><img src='{{src}}' alt='{{alt}}'></a>">
+                        <img src="images/1.jpg" alt="view1">
+                        <img src="images/2.jpg" alt="view2">
+                        <img src="images/3.jpg" alt="view3">
+                        <img src="images/4.jpg" alt="view4">
+                        <img src="images/5.jpg" alt="view5">
+                    </div>
+                    <!-- empty element for pager links -->
+                    <div id="adv-custom-pager" class="hero-slider-th-container"></div>
+                    <div class="hero-slider-controls-container">
+                        <button id="prev" class="prev">
+                            <span class="sr-only"> </span>
+                            <img src="images/arrow-left-white.png" alt="Left arrow">
+                        </button>
+                        <button id="next" class="next">
+                            <span class="sr-only"></span>
+                            <img src="images/arrow-right-white.png" alt="Right arrow">
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <br>
+        </section>
+        <footer>
+            <b>
+                <br><br><br>
+                Information and pictures from <a href="https://en.wikipedia.org/wiki/Japan">Wiki</a> and <a
+                    href="https://wallhaven.cc/">Wallhaven</a>
+                <br><br>
+                Website created by BCIT SSD Student, Winson Cheung.
+                <br><br>
+                For Educational Use Only.
+                <br><br>
+            </b>
+            <script src="scripts/jquery-3.4.1.min.js"></script>
+            <script src="scripts/jquery.cycle2.min.js"></script>
+            <script src="./scripts/menu.js"></script>
+        </footer>
+    </div>
+</body>
+</html>
