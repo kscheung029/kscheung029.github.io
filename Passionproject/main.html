@@ -115,7 +115,9 @@
 										<div class="tab-content">
 											<div class="tab-content-inner active" data-content="signup">
 												<h3>How can we help? <br>We will get back to you soon.</h3>
+
 												<form action="#">
+
 													<div class="row form-group">
 														<div class="col-md-12">
 															<label for="fullname">Your Name</label>
@@ -135,7 +137,8 @@
 													</div>
 													<div class="row form-group">
 														<div class="col-md-12">
-															<label for="booster">Preferred Booster:</label>
+															<label for="booster">Preferred Coach/Booster:( leave this
+																blank if none )</label>
 															<input type="text" id="boostername" class="form-control">
 														</div>
 													</div>
@@ -149,8 +152,38 @@
 
 													<div class="row form-group">
 														<div class="col-md-12">
-															<input type="submit" class="btn btn-primary btn-block"
-																value="Submit">
+															<div id="paypal-button-container"></div>
+															<script
+																src="https://www.paypal.com/sdk/js?client-id=sb&currency=USD"
+																data-sdk-integration-source="button-factory"></script>
+															<script>
+																paypal.Buttons({
+																	style: {
+																		shape: 'pill',
+																		color: 'gold',
+																		layout: 'horizontal',
+																		label: 'paypal',
+																		tagline: true
+																	},
+																	createOrder: function (data, actions) {
+																		return actions.order.create({
+																			purchase_units: [{
+																				amount: {
+																					value: '20'
+																				}
+																			}]
+																		});
+																	},
+																	onApprove: function (data, actions) {
+																		return actions.order.capture().then(function (details) {
+																			alert('Transaction completed by ' + details.payer.name.given_name + '!');
+																		});
+																	}
+																}).render('#paypal-button-container');
+															</script>
+															<h7>
+																<p>(Paypal Sandbox testing account in README file)</p>
+															</h7>
 														</div>
 													</div>
 												</form>
@@ -189,7 +222,7 @@
 							<div class="fh5co-text">
 								<h2>Outplay</h2>
 								<p>Solo Challenger 999LP.</p>
-								<p><span class="btn btn-primary" >Schedule an
+								<p><span class="btn btn-primary">Schedule an
 										appointment</span></p>
 							</div>
 						</a>
@@ -217,7 +250,7 @@
 							<div class="fh5co-text">
 								<h2>Mixiu</h2>
 								<p>TFT Challenger 999LP.</p>
-								<p><span class="btn btn-primary" >Schedule an
+								<p><span class="btn btn-primary">Schedule an
 										appointment</span></p>
 							</div>
 						</a>
@@ -248,7 +281,7 @@
 							<div class="fh5co-text">
 								<h2>Kenny</h2>
 								<p>Annie one trick.</p>
-								<p><span class="btn btn-primary" >Schedule an
+								<p><span class="btn btn-primary">Schedule an
 										appointment</span></p>
 							</div>
 						</a>
@@ -263,7 +296,7 @@
 							<div class="fh5co-text">
 								<h2>Boris Song</h2>
 								<p>Solo Challenger 999LP.</p>
-								<p><span class="btn btn-primary" >Schedule an
+								<p><span class="btn btn-primary">Schedule an
 										appointment</span></p>
 							</div>
 						</a>
@@ -279,7 +312,7 @@
 							<div class="fh5co-text">
 								<h2>Shupian</h2>
 								<p>Flex Challenger 999LP.</p>
-								<p><span class="btn btn-primary" >Schedule an
+								<p><span class="btn btn-primary">Schedule an
 										appointment</span></p>
 							</div>
 						</a>
@@ -293,7 +326,7 @@
 							<div class="fh5co-text">
 								<h2>SaltedFish</h2>
 								<p>USC Gunning fans.</p>
-								<p><span class="btn btn-primary" >Schedule an
+								<p><span class="btn btn-primary">Schedule an
 										appointment</span></p>
 							</div>
 						</a>
@@ -307,7 +340,7 @@
 							<div class="fh5co-text">
 								<h2>Ozkai</h2>
 								<p>Feeder.</p>
-								<p><span class="btn btn-primary" >Schedule an
+								<p><span class="btn btn-primary">Schedule an
 										appointment</span></p>
 							</div>
 						</a>
@@ -315,7 +348,7 @@
 
 
 					<div class="col-lg-4 col-md-4 col-sm-6">
-						<a class="fh5co-card-item " href="#top"> 
+						<a class="fh5co-card-item " href="#top">
 							<figure>
 								<div class="overlay"><i class="ti-plus"></i></div>
 								<img src="images/cha.png" alt="Image" class="img-responsive">
@@ -323,7 +356,7 @@
 							<div class="fh5co-text">
 								<h2>Lolita</h2>
 								<p>My Toolgirl.</p>
-								<p><span class="btn btn-primary" >Schedule an
+								<p><span class="btn btn-primary">Schedule an
 										appointment</span></p>
 							</div>
 						</a>
@@ -353,7 +386,7 @@
 							<div class="fh5co-text">
 								<h2>Jie(Vapor)</h2>
 								<p>You are in.</p>
-								<p><span class="btn btn-primary" >Schedule an
+								<p><span class="btn btn-primary">Schedule an
 										appointment</span></p>
 							</div>
 						</a>
@@ -453,7 +486,8 @@
 								<small class="block">Follow me on Social Media: </small>
 								<li><a href="https://twitter.com/KwanSingCheung1"><i class="icon-twitter"></i></a></li>
 								<li><a href="https://www.facebook.com/Winsoncks"><i class="icon-facebook"></i></a></li>
-								<li><a href="https://www.linkedin.com/in/kwansingcheung/"><i class="icon-linkedin"></i></a></li>
+								<li><a href="https://www.linkedin.com/in/kwansingcheung/"><i
+											class="icon-linkedin"></i></a></li>
 							</ul>
 						</p>
 					</div>
@@ -499,4 +533,3 @@
 </body>
 
 </html>
-

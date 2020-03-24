@@ -7,3 +7,7 @@ The website let customers look through a list of coaches/players and inquiry one
 After that, they will allow to send custom message to the website for any additional inquiry.<br><br>
 At the end, they are redirect to paypal website to pay with either credit card or paypal balance within the paypal system.<br><br>
 All the progress details are in the issue page, and all the issue is closed for finalizing the project. More issue will be created once this project is WIP  at future again.
+To test the paypal, use this sandbox account:<br>
+Paypal Email:sb-lc6hi1142776@personal.example.com<br>
+Password:wkV2&fj7<br><br>
+Login to https://www.sandbox.paypal.com/myaccount/summary to view transaction.
