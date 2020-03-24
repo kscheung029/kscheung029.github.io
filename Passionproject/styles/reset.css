@@ -5,7 +5,6 @@
 
 /* Box Sizing Reset */
 /* Paul Irish - Box Sizing Reset */
-/* https://www.paulirish.com/2012/box-sizing-border-box-ftw/ */
 /* apply a natural box layout model to all elements, but allowing components to change */
 html {
     box-sizing: border-box;
@@ -35,7 +34,7 @@ table {
 	border-spacing: 0;
 }
 
-/* End Michael Whyte's Reset */
+/* End Reset */
 
 
 
