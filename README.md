@@ -1,4 +1,6 @@
 # Portfolio-Project
-Things to work on:<br>
+Work In Progress:<br>
+content of the website.<br>
+Done:<br>
 layout/design/interaction of the website<br>
-category:projects,about,contact info.
+
