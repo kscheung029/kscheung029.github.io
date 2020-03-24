@@ -1,4 +1,4 @@
-# Hi!
+# Hi everyone!
 This is My BCIT SSD Program's Web passion project, which is a demo boosting website for one of the most played game named League of Legend.<br>
 Website is built mainly with HTMLCSS and Bootstrap. It uses responsive, mobile-first front-end web development.<br>
 The website let customers look through a list of coaches/players and inquiry one of the service of their desire.<br>
