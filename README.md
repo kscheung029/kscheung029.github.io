@@ -1,7 +1,9 @@
 # Portfolio-Project
 Website Link: chat1.me<br><br>
-Website is currently Work In Progress.<br>
+Website is currently Work In Progress and will have update features in the future.<br>
 
 Finished:
 layout/design/interaction of the website<br>
+Paypal payment system inserted.<br>
+Mailchimp Subscribe function API.
 
