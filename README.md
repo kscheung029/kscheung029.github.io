@@ -1,5 +1,5 @@
 # Portfolio-Project
-Website Link: chat1.me<br><br>
+Website Link: https://kscheung029.github.io/<br><br>
 Website is currently Work In Progress and will have update features in the future.<br>
 
 Finished:
